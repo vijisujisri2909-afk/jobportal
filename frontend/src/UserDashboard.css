@@ -1,0 +1,52 @@
+.user-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.user-dashboard h2 {
+  border-bottom: 2px solid #1877f2;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.applications-list {
+  list-style: none;
+  padding: 0;
+}
+
+.application-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.application-item h3 {
+  margin-top: 0;
+  color: #1877f2;
+}
+
+.application-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.application-item p strong {
+  color: #333;
+}
+
+.no-applications {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 40px;
+}

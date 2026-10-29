@@ -1,0 +1,55 @@
+.resume-upload-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-upload-container h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.resume-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.resume-upload-form input[type='file'] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.resume-upload-form button {
+  padding: 12px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resume-upload-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #28a745;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.error {
+  color: #d32f2f;
+  text-align: center;
+  margin-top: 15px;
+}

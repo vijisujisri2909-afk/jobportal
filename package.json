@@ -1,0 +1,10 @@
+{
+  "name": "jobportal-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "venv\\Scripts\\python.exe manage.py runserver",
+    "dev": "venv\\Scripts\\python.exe manage.py runserver",
+    "check": "venv\\Scripts\\python.exe manage.py check"
+  }
+}

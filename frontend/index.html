@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Portal</title>
+<style>
+body{font-family:Arial;background:#f0f2f5;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.box{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);width:320px}
+input{width:94%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:6px}
+button{width:100%;padding:12px;background:#1877f2;color:white;border:none;border-radius:6px;font-weight:bold;cursor:pointer}
+#msg{text-align:center;font-weight:bold;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="box">
+<h2 style="text-align:center">Job Portal 🔥</h2>
+<input id="u" placeholder="Username">
+<input id="p" type="password" placeholder="Password">
+<button onclick="reg()">Register Pannu da</button>
+<p id="msg"></p>
+</div>
+<script>
+async function reg(){
+ document.getElementById('msg').innerText='Loading...';
+ try{
+  let r=await fetch('http://127.0.0.1:8000/api/register/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:document.getElementById('u').value,password:document.getElementById('p').value})});
+  let d=await r.json();
+  document.getElementById('msg').innerText=r.ok?'✅ SUCCESS DA Viji! DB la save aachu!':'❌ '+JSON.stringify(d);
+ }catch(e){document.getElementById('msg').innerText='❌ Backend odala da! runserver pannu da!';}
+}
+</script>
+</body>
+</html>
